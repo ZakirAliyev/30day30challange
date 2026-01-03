@@ -1,0 +1,37 @@
+#drawerRight {
+  .addBtn {
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;
+    border: none;
+    border-radius: 8px;
+    background: #EA297E;
+    color: #ffffff;
+
+    @media (max-width: 992px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.drawerSaveBtn {
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+  border: none;
+  border-radius: 8px;
+  background: #EA297E;
+  color: #ffffff;
+
+  &:hover {
+    background: #e62279 !important;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 14px;
+  }
+}

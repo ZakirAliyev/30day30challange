@@ -1,0 +1,64 @@
+#sidebar {
+  width: 300px;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  padding: 16px;
+  background: white;
+  flex-shrink: 0;
+  border-right: 1px solid #EDF1F7;
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+
+  .logoWrapper {
+    width: calc(100% - 32px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+
+    .logo {
+      height: 40px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+
+    .link {
+      color: black;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+
+      .icon {
+        font-size: 18px;
+      }
+
+      span {
+        font-size: 16px;
+        @media (max-width: 992px) {
+          font-size: 14px;
+        }
+      }
+
+      &:hover {
+        background: #EA297E;
+      }
+    }
+
+    .selected {
+      background: #EA297E;
+      color: white;
+    }
+  }
+}

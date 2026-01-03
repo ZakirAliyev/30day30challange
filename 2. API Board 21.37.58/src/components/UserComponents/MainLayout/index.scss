@@ -1,0 +1,36 @@
+#mainLayout {
+  width: 100%;
+  background: #FAFBFF;
+
+  .nameAndBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 16px;
+    padding: 16px;
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 1px solid #f1f1f1;
+
+    .container {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .name {
+      font-size: 28px;
+      color: #1c1c1c;
+
+      @media (max-width: 992px) {
+        font-size: 26px;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding: 8px;
+  }
+}
