@@ -1,0 +1,26 @@
+$scroll-track: rgba(2, 6, 23, 0);
+$scroll-thumb: linear-gradient(180deg, #38bdf8, #6366f1);
+$scroll-thumb-hover: linear-gradient(180deg, #0ea5e9, #4f46e5);
+
+@mixin custom-scrollbar($width: 4px) {
+  &::-webkit-scrollbar { width: $width; }
+
+  &::-webkit-scrollbar-track {
+    background: $scroll-track;
+    border-radius: 12px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $scroll-thumb;
+    border-radius: 12px;
+    border: 2px solid $scroll-track;
+    transition: background .2s ease;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $scroll-thumb-hover;
+  }
+
+  scrollbar-width: thin;
+  scrollbar-color: #f1b363 $scroll-track;
+}

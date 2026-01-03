@@ -1,0 +1,26 @@
+#homePage {
+  .nameAndBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0 32px;
+
+    .name {
+      font-size: 32px;
+      color: white;
+
+      @media (max-width: 992px) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .columnWrapper {
+    display: flex;
+    gap: 24px;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+  }
+}
